@@ -1,0 +1,14 @@
+﻿  Assembling SE_asm01e.asm...
+SE_asm01e.asm(1): error A2008: syntax error : .
+SE_asm01e.asm(2): error A2008: syntax error : .
+SE_asm01e.asm(13): error A2008: syntax error : .
+SE_asm01e.asm(28): error A2008: syntax error : SetConsoleTitleA
+SE_asm01e.asm(35): error A2070: invalid instruction operands
+SE_asm01e.asm(41): error A2070: invalid instruction operands
+SE_asm01e.asm(47): error A2070: invalid instruction operands
+SE_asm01e.asm(48): error A2070: invalid instruction operands
+SE_asm01e.asm(51): error A2008: syntax error : WriteConsoleA
+SE_asm01e.asm(52): error A2008: syntax error : WriteConsoleA
+SE_asm01e.asm(59): error A2008: syntax error : eax
+SE_asm01e.asm(83): fatal error A1010: unmatched block nesting : tochar
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: выход из команды "ml64.exe /c /nologo /Zi /Fo"x64\Debug\SE_asm01e.obj" /W3 /errorReport:prompt  /TaSE_asm01e.asm" с кодом "1".

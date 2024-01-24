@@ -1,0 +1,13 @@
+﻿  Assembling asemb.asm...
+asemb.asm(1): error A2008: syntax error : .
+asemb.asm(2): error A2008: syntax error : .
+asemb.asm(8): error A2008: syntax error : .
+asemb.asm(12): error A2008: syntax error : .
+asemb.asm(16): error A2008: syntax error : HW
+asemb.asm(23): error A2070: invalid instruction operands
+asemb.asm(24): error A2070: invalid instruction operands
+asemb.asm(32): error A2008: syntax error : main
+asemb.asm(32): error A2088: END directive required at end of file
+asemb.asm(25): error A2006: undefined symbol : HW
+asemb.asm(26): error A2006: undefined symbol : MessageBowA
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: выход из команды "ml64.exe /c /nologo /Zi /Fo"x64\Debug\asemb.obj" /Fl"x64\Debug\\" /W3 /errorReport:prompt  /Taasemb.asm" с кодом "1".

@@ -1,0 +1,8 @@
+﻿  FileWorker.cpp
+E:\универ\КПО\asem4!\laba4Ser\laba4Ser\FileWorker.h(5,25): warning C4305: инициализация: усечение из "int" в "char"
+E:\универ\КПО\asem4!\laba4Ser\laba4Ser\FileWorker.h(5,25): warning C4309: инициализация: усечение константного значения
+E:\универ\КПО\asem4!\laba4Ser\laba4Ser\FileWorker.h(6,26): warning C4305: инициализация: усечение из "int" в "char"
+E:\универ\КПО\asem4!\laba4Ser\laba4Ser\FileWorker.h(6,26): warning C4309: инициализация: усечение константного значения
+E:\универ\КПО\asem4!\laba4Ser\laba4Ser\FileWorker.cpp(30,9): warning C4244: =: преобразование "long" в "short", возможна потеря данных
+E:\универ\КПО\asem4!\laba4Ser\laba4Ser\FileWorker.cpp(40,9): warning C4244: =: преобразование "long" в "unsigned short", возможна потеря данных
+  laba4Ser.vcxproj -> E:\универ\КПО\asem4!\laba4Ser\x64\Debug\laba4Ser.exe

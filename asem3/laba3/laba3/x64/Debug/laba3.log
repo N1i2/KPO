@@ -1,0 +1,6 @@
+﻿  Assembling asem3.asm...
+
+asem3.asm(28): error A2008: syntax error : MessageBoxA
+asem3.asm(34): error A2008: syntax error : main
+asem3.asm(34): error A2088: END directive required at end of file
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: выход из команды "ml64.exe /c /nologo /Zi /Fo"x64\Debug\asem3.obj" /Fl"x64\Debug\\" /W3 /errorReport:prompt  /Taasem3.asm" с кодом "1".

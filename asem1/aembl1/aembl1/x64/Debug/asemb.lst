@@ -1,0 +1,84 @@
+Microsoft (R) Macro Assembler (x64) Version 14.37.32822.0   11/14/23 22:04:53
+asemb.asm						     Page 1 - 1
+
+
+				.586											;системная команда
+asemb.asm(1) : error A2008:syntax error : .
+				.MODEL FLAT, STDCALL							;Модель памяти, соглашение о вызове
+asemb.asm(2) : error A2008:syntax error : .
+				includelib kernel32.lib							;компоновщику
+
+				ExitProcess PROTO:DWORD							;прототип функции для завершения процесса
+				MessageBoxA PROTO:DWORD,:DWORD,:DWORD,:DWORD	;прототип API функции
+
+				.STACK 4096										;выделение стека
+asemb.asm(8) : error A2008:syntax error : .
+
+ 00000000			.CONST											;сигмент констант
+
+				.DATE											;сегмент данных
+asemb.asm(12) : error A2008:syntax error : .
+ = 00000000			MB_OK EQU 0										;EQU определяет константу
+ 00000000 CC EE FF 20 EF	STR1 DB "Моя первая программа", 0				;стора с нулевого бита
+	   E5 F0 E2 E0 FF
+	   20 EF F0 EE E3
+	   F0 E0 EC EC E0
+	   00
+ 00000015 CF F0 E8 E2 E5	STR2 DB "Привет всем", 0						;стора с нулевого бита
+	   F2 20 E2 F1 E5
+	   EC 00
+				HW DD?											;двойное слово не инициализированно
+asemb.asm(16) : error A2008:syntax error : HW
+
+ 00000000			.CODE											;сигмент кода
+
+ 00000000			main PROC										;точка входа в мейн
+ 00000000			START:											;метка
+ 00000000  6A 00				PUSH MB_OK								;
+						PUSH OFFSET STR1						;
+asemb.asm(23) : error A2070:invalid instruction operands
+						PUSH OFFSET STR2						;
+asemb.asm(24) : error A2070:invalid instruction operands
+						PUSH HW									;
+asemb.asm(25) : error A2006:undefined symbol : HW
+						CALL MessageBowA						;вызов функции
+asemb.asm(26) : error A2006:undefined symbol : MessageBowA
+					
+ 00000002  6A FF			push -1										;код возврата
+ 00000004  E8 00000000 E		call ExitProcess							;завершение любого процесса виндоус
+ 00000009			main ENDP										;конец процедуры
+
+				end main										;конец мейна
+Microsoft (R) Macro Assembler (x64) Version 14.37.32822.0   11/14/23 22:04:53
+asemb.asm						     Symbols 2 - 1
+
+
+
+
+Segments:
+
+                N a m e                  Length   Align   Class
+
+CONST  . . . . . . . . . . . . .	 00000021 16	  'CONST'	 ReadOnly
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+MessageBoxA  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+main . . . . . . . . . . . . . .	P 	 00000000 _TEXT	Length= 0000001E Public
+  START  . . . . . . . . . . . .	L 	 00000000 _TEXT	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+MB_OK  . . . . . . . . . . . . .	Number	 00000000h   
+STR1 . . . . . . . . . . . . . .	Byte	 00000000 CONST	
+STR2 . . . . . . . . . . . . . .	Byte	 00000015 CONST	
+
+	   0 Warnings
+	   11 Errors

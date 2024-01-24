@@ -1,0 +1,6 @@
+﻿  Generator.cpp
+E:\универ\КПО\asem4!\laba4Ser\laba14Diser\FileWorker.h(5,25): warning C4305: инициализация: усечение из "int" в "char"
+E:\универ\КПО\asem4!\laba4Ser\laba14Diser\FileWorker.h(5,25): warning C4309: инициализация: усечение константного значения
+E:\универ\КПО\asem4!\laba4Ser\laba14Diser\FileWorker.h(6,26): warning C4305: инициализация: усечение из "int" в "char"
+E:\универ\КПО\asem4!\laba4Ser\laba14Diser\FileWorker.h(6,26): warning C4309: инициализация: усечение константного значения
+  laba14Diser.vcxproj -> E:\универ\КПО\asem4!\laba4Ser\x64\Debug\laba14Diser.exe

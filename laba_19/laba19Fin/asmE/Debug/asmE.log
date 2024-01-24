@@ -1,0 +1,3 @@
+﻿  Assembling asmE.asm...
+LINK : warning LNK4098: библиотека по умолчанию "libucrt.lib" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+  asmE.vcxproj -> E:\универ\КПО\laba_19!\laba19Fin\Debug\asmE.exe
